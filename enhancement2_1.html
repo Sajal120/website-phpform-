@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+   	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta charset="utf-8" />
+	<meta name="description" content="index" />
+	<meta name="keywords" content="cloud computing enhancement1" />
+	<meta name="sajal" content="cloud computing"  />
+    <title>Star Rating</title>
+    <link rel="stylesheet" href="styles/style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>  <!-- importing fonts for star like shape-->
+  <script src="scripts/myscripts1.js"> </script>
+ 
+  </head>
+  <body>
+  <br><br><br>
+    <!-- putting the rating in a container-->
+    <div class="container">
+      <div class="post">
+        <div class="text">Thanks for rating us!</div>          <!--when user clicks on post it is shown -->
+        <div class="edit">EDIT</div>           <!--when user clicks on post it is shown in the top right corner when clicked we can edit our experience description -->
+      </div>
+      <div class="star-widget">                    <!--putting  the radio buttons as a star using the styleseet font -->
+        <input type="radio" name="rate" id="rate-5">            
+        <label for="rate-5" class="fas fa-star" ></label>
+        <input type="radio" name="rate" id="rate-4">
+        <label for="rate-4" class="fas fa-star"></label>
+        <input type="radio" name="rate" id="rate-3">
+        <label for="rate-3" class="fas fa-star"></label>
+        <input type="radio" name="rate" id="rate-2">
+        <label for="rate-2" class="fas fa-star"></label>
+        <input type="radio" name="rate" id="rate-1">
+        <label for="rate-1" class="fas fa-star"></label>
+        <form  id = "sform">
+          <header></header>
+          <div class="textarea">
+            <textarea cols="30" placeholder="Describe your experience.."></textarea>    <!--Place to describe -->
+          </div>
+          <div class="btn">
+            <button type="submit" id="s">Post</button>    <!-- submit -->
+          </div> 
+        </form>
+      </div>
+    </div>
+   
+  </body>
+</html>

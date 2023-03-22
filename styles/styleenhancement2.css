@@ -1,0 +1,121 @@
+/*
+filename: [Sajal Basnet]
+author: [Sajal Basnet]
+created: [20/11/2022]
+last modified: [20/11/2022]
+purpose: [javscript use for enhancement 2]
+*/
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,body{             /*settings for enhancement 2_2 page*/
+  display: grid;
+  height: 100%;
+  place-items: center;
+  background: #efefef;
+}
+.wrapper{            /*settings for wrapper class*/
+  position: relative;
+  height: 550px;
+  width: 1000px;
+  overflow: hidden;
+  background: #fff;
+  border: 7px solid #fff;
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.15);
+}
+.wrapper .images{         /*settings for wrapper images*/
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+.wrapper .images .img-1{ /*settings for image 1 which is a colorful image*/
+  height: 100%;
+  width: 100%;
+  background: url("images/img.jpg") no-repeat; /*importing colorful image answer*/
+  /* background: url("images/car.jpg") no-repeat; */
+}
+.wrapper .images .img-2{ /*settings for image 2 which is a colorful image*/
+  height: 100%;
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  /* filter: blur(5px); */
+  background: url("images/img.png") no-repeat; /*importing grescale image answer*/
+  /* background: url("images/car.png") no-repeat; */
+}
+.wrapper .slider{       
+  position: absolute;
+  top: 0;
+  width: 100%;                     /*wrapper postioning*/
+  z-index: 99;
+}
+.wrapper .slider input{
+  width: 100%;
+  outline: none;
+  background: none;
+  -webkit-appearance: none;
+}
+.slider input::-webkit-slider-thumb{   /* ::-webkit-slider-thumb CSS pseudo-element represents the "thumb" 
+										that the user can move within the "groove" of an <input> of type="range" 
+										to alter its numerical value */
+  height: 486px;
+  width: 3px;
+  background: none;
+  -webkit-appearance: none;
+  cursor: col-resize;
+}
+.slider .drag-line{
+  width: 3px;            
+  height: 486px;                  /* vertical line(dragline) height*/ 
+  position: absolute;
+  left: 49.85%;
+  pointer-events: none;
+}
+.slider .drag-line::before,        /*dragline which is like a vertical line in the middle of image which can be dragged left or right*/
+.slider .drag-line::after{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 222px;
+  background: #fff;
+}
+.slider .drag-line::before{
+  top: 0;
+}
+.slider .drag-line::after{
+  bottom: 0;
+}
+.slider .drag-line span{          /*dragline appearance settings*/
+  height: 42px;
+  width: 42px;
+  border: 3px solid #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+.slider .drag-line span::before,  
+.slider .drag-line span::after{   /*dragline when dragged towards or away from do these css validations*/
+  position: absolute;
+  content: "";
+  top: 50%;
+  border: 10px solid transparent;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.slider .drag-line span::before{    /*dragline when dragged towards or away from do these css validations*/
+  left: 40%;
+  border-left-color: #fff;
+}
+.slider .drag-line span::after{
+  left: 60%;
+  border-top-color: #fff;
+}
+
+body {background-color:lightyellow;} /* background color for all other pages */

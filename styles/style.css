@@ -1,0 +1,479 @@
+/*
+filename: [Sajal Basnet]
+author: [Sajal Basnet]
+[8/11/2022]
+last modified: [20/11/2022]
+purpose: [javscript use]
+*/
+
+textarea {
+  resize: none;       /* text area size to be fixed in quiz*/
+}
+
+.back {background-image: url("images/background.jpg"); /* setting backfround for the index page having body class as 'back */
+background-size: 50%;
+}	 
+
+body {background-color:lightyellow;} /* background color for all other pages */
+article {min-width:30em;} /*Let’s set a minimum width on the article element to help preserve legibility of view when resizing window */
+
+
+
+
+
+  
+
+* {font-family: Cambria, sans-serif; color:darkblue;} /* all fonts  */
+
+
+ 
+
+h1                                                   /* all h1 fonts  */
+{
+	color:blue;
+	font-size: 3em;
+	font-family: Lucida Handwriting;               
+	text-shadow: 5px 2px 3px red;
+
+
+}
+
+ 
+header 
+{                                                   /* set header for all */
+	border: 3px solid yellow;    
+
+	background-color:yellowgreen;
+	text-align:center;
+	}
+	
+	
+	#bi img{                                   
+	display: inline-block;                        /* float logo to right using div*/
+
+	float:right;
+}
+ 
+#si img 
+{							/* setting animation for the cloud computing image in index page */
+	width: 400px;                      /*   setting image height, width and position as relative and animation as infinite   */
+	height: 300px;
+	position: relative;
+	animation-name: example;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+ 
+}
+
+
+@keyframes example 
+{
+  0%   { left:0px; top:0px;}                           /* setting keyframes*/
+  25%  {  left:100px; top:0px;}
+  50%  { left:100px; top:200px;}           /* floating the image to different location on different keyframes  */
+  75%  {  left:0px; top:200px;}
+  100% { left:0px; top:0px;}
+}
+
+#dun {
+	background-color:lightblue;
+	font: maroon;
+	font-size:100px;
+}
+
+h2
+{
+	color: Green;
+	font-size:1.5em;
+	background-color: yellow;
+	display: inline																				/*h2 font color and size */
+}
+
+.bl 
+{
+	
+	color:darkblue;
+	background-color: lightblue; /*paragraph belonging to 'bl' class got background color in index page*/
+}
+
+#cl 
+{
+	float:right;
+	                                    /*paragraph belonging to 'cl' class got background color and border */
+}
+
+	aside {font-style: italic;}  /* font style for aside*/
+
+
+
+	h2, h3 {font-family: arial, sans-serif;}  /* setting font family for all h2 and h3*/
+
+
+nav a                                  /* menu creation  */
+{ 
+	text-decoration: none;
+	padding:0.2em 0.6em;
+	border:4px solid red;
+}
+
+#navbar 
+{                           /* menu creation  */
+	
+	padding:1em;
+	background-color:lightgreen;
+	 
+
+}
+ 
+ 
+nav a:hover 								/* when mouse cursor is placed on the menu, following action happens  */
+{
+	background-color:lightblue;
+	border-color: darkblue;
+	font-weight: bold;
+}
+
+footer 
+{											/* setting border for footer  */
+border-top: 4px double;
+}
+
+footer {font-style: italic;} /* setting italic as a font-style for footer  */
+
+#lists {float:left;}  /*a style rule that floats the lists section to the left in topic page*/
+table {margin: auto;}  /* Set the margin of the table element to auto to centre it in the column in topic page*/ 
+#tables {float:right; margin: auto;}  /* Create a rule that floats the tables section to the right in topic page*/ 
+#hyperlinks {clear:left; float:left;}  /*   to stop subsequent elements from floating and aligning it in right position, we used the following property in topic page*/ 
+#images {float:right;}  /*   to stop subsequent elements from floating and aligning it in right position, we used the following property in topic page*/  
+figure {border: 2px solid #ccc;}     /*   setting border for the figure in topic page*/ 
+footer {border-top: 4px double red; clear: both;}	/*  setting border for the footer*/ 
+#lists, #images, #tables, #hyperlinks{width: 40%; text-align: center;}	/*  setting width for the box model in topic page and aligning the text*/ 
+ol, ul, dl {text-align: left;}  /*aligning text in the list*/
+
+article {min-width:30em;} /*Let’s set a minimum width on the article element to help preserve legibility of view when resizing window */
+
+
+#cloudhead 
+{        /*make a box element */
+	display:inline-block;       
+	width: 900px;
+	border: 15px solid green;
+    background-color:lightgreen;
+	padding: 40px;
+	margin: 20px;
+}
+
+#cloudhead:hover       /*when mouse is hovered following thing happens in about page */
+{
+        box-shadow: inset 0 0 0 25px #53a7ea;
+}
+
+#cloudhead1 
+{        /*make a box element*/
+	width: 1000px;
+	border: 15px solid green;
+    background-color:lightgreen;
+	padding: 40px;
+	margin: 20px;
+}
+#cloudhead1:hover       /*when mouse is hovered following thing happens in about page */
+{
+        box-shadow: inset 0 0 0 25px #53a7ea;
+}
+
+footer p{display:inline-block; width:33%}                                                  
+
+													/*set width and inline settings for footer */ 
+
+footer p:first-child {float:left}                                  /*pseudo class or element/* 
+
+																		/*  In footer, the following rule using the :firstchild,:nth-child(n), and :last child pseudo class 
+																			selectors will select the sibling paragraphs according to the position in which 
+																			they sit under their parent element.  */
+footer p:nth-child(2) {text-align: center;}          /*footer having email function is centered; other footers are on side just for decoration of a page*/
+footer p:last-child {float:right; text-align: right;}        
+ 
+
+
+aside:hover 
+{
+	display:block;                             /* whenever a mouse pointer is placed in topic html's , it floats toright with following settings*/
+	border:4px inset purple;
+	border-radius: 14 px;
+	margin: 1 em; 
+	padding: 1 em;
+	width:50%;																			/*  <aside> has 30% of the width of a page and floats to the right. */
+	float:right;
+	box-shadow: 10px 10px 5px #aaaaaa;
+}
+
+
+
+
+ 
+.special {color:darkorange; font-weight:bold;}  /*setting special charactert to a different colour */
+
+ 
+
+
+
+ol {list-style-type:lower-roman;}  /*setting style for ordered and unordered list in topic page */
+ul {list-style-type:square;}
+
+h1 
+{
+	color:purple;                   /* setting heading 1 to a purple colour */
+	
+}
+
+h2
+{                                          /* setting heading 2 font and color*/
+	color:rgb(0,128,128);
+	font-size:1.5em;
+}
+
+aside {font-style: italic;}  /*setting aside to be italic */
+
+ 
+
+table,table, th, td            /* setting table border and margin */
+{
+	border: 1px solid black;
+	margin:auto;
+}
+ 
+ 
+ 
+ #ttt {        /*make a box element for codes in enhancement page */
+	display:inline-block;       
+	width: 500px;
+	border: 2px solid green;
+	font: blue;
+	background-color:lightgreen;
+	padding: 4px;
+	margin: 2px;
+}
+
+ #tt1 {        /*make a box element for codes in enhancement page */
+	display:inline-block;
+	         
+width: 500px;
+
+  border: 2px solid green;
+  font: blue;
+  background-color:lightgreen;
+  padding: 4px;
+  margin: 2px;
+}
+
+#me {        /*make a box element for codes in enhancement page */
+	display:inline-block;
+	         
+width: 500px;
+
+  border: 2px solid green;
+  color: blue;
+  background-color:lightgreen;
+  padding: 4px;
+  margin: 2px;
+}
+
+#me1 
+{        /*make a box element for codes in enhancement page */
+	display:inline-block;
+	         
+width: 500px;
+
+  border: 2px solid green;
+  color: blue;
+  background-color:lightgreen;
+  padding: 4px;
+  margin: 2px;
+}
+
+
+
+
+.box 
+{
+	display: flex;                    /*  box dislpay settings in about page      */
+}
+
+.box .inner 
+{                      /*  setting inner box width height, the fonts and text to flow on it in about page   */
+	width: 750px;
+	height: 500px;                        
+	line-height: 500px;
+	font-size: 5em;
+	font-family: sans-serif;
+	font-weight: bold;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.box .inner:first-child 
+{                       /* in inner class,  setting the background color for the box and transforming it accordingly in first-child in about page    */
+	background-color: indianred;
+	color: darkred;
+	transform-origin: right;
+	transform: perspective(300px) rotateY(-15deg);
+}
+
+.box .inner:last-child 
+{             /*  in inner class, setting the background color for the box and transforming it accordingly in last-child in about page    */
+	background-color: lightcoral;
+	color: antiquewhite;
+	transform-origin: left;
+	transform: perspective(300px) rotateY(15deg);
+}
+
+.box .inner span 
+{
+	position: absolute;                             /*  setting the text overflow infinite animation inside inner class in about page  */
+	animation: marquee 5s linear infinite;
+}
+
+.box .inner:first-child span 
+{
+	animation-delay: 2.5s;								/*  animation delay settings with the text flowing to left inside inner class in about page    */
+	left: -100%;
+}
+
+@keyframes marquee 
+{                        /*     setting keyframes and relevant position in about page      */
+	from {
+		left: 100%;
+	}
+
+	to {
+		left: -100%;
+	}
+}
+ 
+  
+
+.contact-form
+{										 /*  in quiz page, creating a container for the contact details section by setting its width, height, background and border  */   
+   
+  width: 99%;
+  min-height: 10vh;
+  padding: 0.5em;
+  background-color: #cc99ff;
+  overflow: hidden;
+  border-radius: 15px;
+ 
+}
+
+.quiz 
+{				/*  in quiz page, creating a container for the question's section by setting its width, height, background and border  */   
+  min-height: 10vh;
+  padding: 0.5em;
+                   /*  setting color, border and other functions in quiz page */
+  background-color: lightgreen;
+  border-radius: 15px;
+  
+  
+  display: grid; /* setting each questions in grid so that we can arrange it in columns in table  (in quiz page)*/
+  grid-template-columns: repeat(2, 1fr); /* creates 2 columns (in quiz page) */
+}
+.quiz1 
+{				/*  in quiz page, creating a container for the question's section by setting its width, height, background and border  */   
+  padding: 0.5em;
+                  /*  setting color, border and other functions in quiz page */
+  background-color: lightblue;
+  border-radius: 15px;
+  
+  
+  display: grid; /* setting each questions in grid so that we can arrange it in columns in table  (in quiz page)*/
+  grid-template-columns: repeat(2, 1fr); /* creates 2 columns (in quiz page) */
+}
+
+.para1 
+{                    /* setting background, border-radius and others to create container like structure in quiz page for qustions */              
+  width: 99%;
+  min-height: 10vh;
+  padding: 0.5em;
+  background-color: yellowgreen;
+  overflow: hidden;
+  border-radius: 15px;
+}
+ 
+
+#message 
+{              /* setting the error message style in quiz page  */        
+
+	font-weight: bold;
+	color:darkred;
+	
+	
+  
+}
+
+input[type=submit] {                            /*  all submit buttons to be a particular size */
+    width: 4em;  
+	height: 1.5em;
+	font-size: 2em;
+	font-weight: bold;
+	
+}
+ 
+input[type=reset] 
+{                            /*  all reset buttons to be a particular size */
+    width: 4em;  
+	height: 1.5em;
+	font-size: 2em;
+	font-weight: bold;
+}
+
+.area 
+{                    /* setting background, border-radius and others to create container like structure in quiz page for quetions */              
+  width: 50%;
+  min-height: 10vh;
+  padding: 0.5em;
+  background-color: lightcoral;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+
+#bi1 img{                                   
+	width: 230px;                      /*   setting image height, width and position as relative and animation as infinite   */
+	height: 268px;                        /* settings for ratings image*/
+	 border-radius: 15px;
+	float:left;
+}
+
+.rules            /* mkae a container like structure in quiz page */
+{
+	width: 40;
+  min-height: 25vh;
+  padding: 0.5em;
+  background-color: #F269C9;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+#me2 {        /*make a box element for codes in enhancement page */
+	display:inline-block;
+	         
+width: 700px;
+
+  border: 2px solid green;
+  color: blue;
+  background-color:lightgreen;
+  padding: 4px;
+  margin: 2px;
+}
+
+#me3
+{        /*make a box element for codes in enhancement page */
+	display:inline-block;
+	         
+width: 1100px;
+
+  border: 2px solid green;
+  color: blue;
+  background-color:lightgreen;
+  padding: 4px;
+  margin: 2px;
+}
